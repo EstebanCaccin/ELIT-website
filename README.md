@@ -30,4 +30,5 @@ Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&ut
 
 ## Example
 Clone this repository: https://github.com/EstebanCaccin/ELIT-website.git
+
 Execute [`npm i`] and [`npx next dev`]
