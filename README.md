@@ -2,6 +2,7 @@
 ​
 **Desarrollador**: Esteban Caccin
 ​
+
 A continuación se detallan las tareas realizadas para la prueba de concepto solicitada:
 ​
 1) Cloné el repositorio de GiHub.
