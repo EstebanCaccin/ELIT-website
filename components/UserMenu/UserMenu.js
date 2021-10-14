@@ -5,13 +5,7 @@ import {
   ChevronDownIcon,
 } from '@heroicons/react/solid';
 
-const user = {
-  name: 'Nicole Doe',
-  location: 'Córdoba',
-  role: 'Vendedor'
-};
-
-export default function Header() {
+export default function UserMenu({name}) {
   return (
     <div className="relative z-10 flex-shrink-0 flex h-16 bg-white border-b border-gray-200 lg:border-none">
       {/* Search bar */}
@@ -37,7 +31,7 @@ export default function Header() {
                 />
                 <span className="hidden ml-3 text-gray-700 text-sm font-medium lg:block">
                   <span className="sr-only">Abrir menú para </span>
-                  {user.name}
+                  {name}
                 </span>
                 <ChevronDownIcon
                   className="hidden flex-shrink-0 ml-1 h-5 w-5 text-gray-400 lg:block"

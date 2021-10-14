@@ -1,16 +1,7 @@
 import React from 'react';
-import {
-  CheckCircleIcon,
-  OfficeBuildingIcon
-} from '@heroicons/react/solid';
+import { CheckCircleIcon, OfficeBuildingIcon } from '@heroicons/react/solid';
 
-const user = {
-  name: 'Nicole Doe',
-  location: 'Córdoba',
-  role: 'Vendedor'
-};
-
-export default function UserMenu() {
+export default function UserInfo({name, location, role}) {
   return (
     <div className="bg-white shadow">
       <div className="px-4 sm:px-6 lg:max-w-6xl lg:mx-auto lg:px-8">
@@ -31,7 +22,7 @@ export default function UserMenu() {
                     alt=""
                   />
                   <h1 className="ml-3 text-2xl font-bold leading-7 text-gray-900 sm:leading-9 sm:truncate">
-                    Hola {user.name}
+                    Hola {name}
                   </h1>
                 </div>
                 <dl className="mt-6 flex flex-col sm:ml-3 sm:mt-1 sm:flex-row sm:flex-wrap">
@@ -41,7 +32,7 @@ export default function UserMenu() {
                       className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
                       aria-hidden="true"
                     />
-                    Córdoba
+                    {location}
                   </dd>
                   <dt className="sr-only">Rol</dt>
                   <dd className="mt-3 flex items-center text-sm text-gray-500 font-medium sm:mr-6 sm:mt-0 capitalize">
@@ -49,7 +40,7 @@ export default function UserMenu() {
                       className="flex-shrink-0 mr-1.5 h-5 w-5 text-green-400"
                       aria-hidden="true"
                     />
-                    Administrador
+                    {role}
                   </dd>
                 </dl>
               </div>
